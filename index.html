@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="sapphire">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celebrity Portfolio Space - Premium 3D Celebrity Hub</title>
+    
+    <!-- Primary Search Engine Optimization (SEO) Metadata -->
+    <meta name="description" content="Welcome to Celebrity Portfolio Space - the ultimate premium 3D celebrity portfolio hub. Explore HD lookbooks, fashion walk runway videos, AI couture design rooms, and interactive quality comparisons for Sharvari, Sreeleela, Pranali, and Aneet Padda.">
+    <meta name="keywords" content="Celebrity Portfolio Space, Aesthetica, celebrity portfolio, Sharvari, Sreeleela, Pranali, Aneet Padda, fashion lookbook, runway video, AI couture designer, HD compare slider">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://celebrity-portfolio-space.vercel.app/">
+
+    <!-- Open Graph (Social Sharing SEO for Facebook, Discord, etc.) -->
+    <meta property="og:title" content="Celebrity Portfolio Space - Premium 3D Celebrity Hub">
+    <meta property="og:description" content="Explore HD lookbooks, fashion walk runway videos, AI couture design rooms, and interactive quality comparisons for Sharvari, Sreeleela, Pranali, and Aneet Padda.">
+    <meta property="og:url" content="https://celebrity-portfolio-space.vercel.app/">
+    <meta property="og:image" content="https://celebrity-portfolio-space.vercel.app/new_images/Sharvari_1.png">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card SEO -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Celebrity Portfolio Space - Premium 3D Celebrity Hub">
+    <meta name="twitter:description" content="Explore HD lookbooks, fashion walk runway videos, AI couture design rooms, and interactive quality comparisons for Sharvari, Sreeleela, Pranali, and Aneet Padda.">
+    <meta name="twitter:image" content="https://celebrity-portfolio-space.vercel.app/new_images/Sharvari_1.png">
+
+    <!-- Importing Premium Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS Link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ================= SCROLL PROGRESS BAR ================= -->
+    <div class="scroll-depth-bar" id="scrollProgress"></div>
+
+    <!-- Hidden semantic H1 for Search Engine Optimization (SEO) -->
+    <h1 style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0;">Celebrity Portfolio Space</h1>
+
+    <!-- ================= PREMIUM GLOW DECORATIONS ================= -->
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
+
+    <!-- ================= MAIN DASHBOARD CONTAINER ================= -->
+    <div class="app-container">
+        
+        <!-- HEADER / NAVIGATION -->
+        <header class="main-header">
+            <div class="logo-area">
+                <span class="logo-sparkle">✨</span>
+                <h1 class="logo-title" id="logoClick" style="cursor: pointer;">AESTHETICA</h1>
+            </div>
+            
+            <div class="controls-area">
+                <!-- Theme Switcher -->
+                <div class="theme-selector-wrapper">
+                    <button class="theme-btn-trigger" id="themeBtnTrigger" title="Switch Theme">
+                        <i class="fa-solid fa-palette"></i> Theme
+                    </button>
+                    <div class="theme-dropdown" id="themeDropdown">
+                        <div class="theme-option" data-theme="sapphire">
+                            <span class="color-dot sapphire"></span> Midnight Sapphire
+                        </div>
+                        <div class="theme-option" data-theme="cyberpunk">
+                            <span class="color-dot cyberpunk"></span> Cyberpunk Neon
+                        </div>
+                        <div class="theme-option" data-theme="royal">
+                            <span class="color-dot royal"></span> Royal Gold
+                        </div>
+                        <div class="theme-option" data-theme="emerald">
+                            <span class="color-dot emerald"></span> Emerald Dream
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sound FX Toggle -->
+                <button class="control-btn toggle-btn" id="soundBtn" title="Sound Effects">
+                    <i class="fa-solid fa-volume-high"></i>
+                </button>
+
+                <!-- Premium Status & Login Control -->
+                <div class="auth-header-container" id="authHeaderContainer">
+                    <button class="control-btn action-btn premium-btn" id="loginOpenBtn">
+                        <i class="fa-solid fa-crown"></i> Go Premium
+                    </button>
+                </div>
+
+                <!-- Lo-Fi Beat Player -->
+                <button class="control-btn toggle-btn" id="lofiPlayBtn" title="Play Ambient Study Beats">
+                    <i class="fa-solid fa-headphones"></i> <span class="lofi-btn-text">Lo-Fi Beats</span>
+                </button>
+
+                <!-- Virtual Page Toggle: Quest Hub vs Gallery -->
+                <button class="control-btn action-btn highlight-btn" id="questsNavBtn" title="Go to Quest Hub">
+                    <i class="fa-solid fa-trophy"></i> <span id="questsNavText">Quest Hub</span>
+                </button>
+
+                <!-- Vibe Quiz Button -->
+                <button class="control-btn action-btn" id="quizOpenBtn">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i> Vibe Quiz
+                </button>
+
+                <!-- Fashion Battle Button -->
+                <button class="control-btn action-btn" id="battleOpenBtn">
+                    <i class="fa-solid fa-fire-flame-curved"></i> Fashion Battle
+                </button>
+
+                <!-- Favorites Filter -->
+                <button class="control-btn toggle-btn" id="favFilterBtn" title="Show Bookmarked Looks">
+                    <i class="fa-regular fa-heart"></i> <span class="fav-text">Favorites</span>
+                </button>
+            </div>
+        </header>
+
+        <!-- HERO BRANDING SECTION -->
+        <section class="hero-section">
+            <h2 class="hero-title">CELEBRITY PORTFOLIO SPACE</h2>
+            <p class="hero-subtitle">Premium curation of high-definition fashion lookbooks and interactive styling indices.</p>
+        </section>
+
+        <!-- ================= STUDENT GAMIFIED HUB (VIRTUAL PAGE VIEW) ================= -->
+        <section class="student-hub-grid">
+            
+            <!-- LEFT COLUMN: DAILY QUESTS BOARD -->
+            <div class="hub-panel glass-card quests-panel">
+                <div class="panel-header">
+                    <div class="panel-title-group">
+                        <i class="fa-solid fa-star gold-star animate-pulse"></i>
+                        <h3>Daily Style Quests</h3>
+                    </div>
+                    <!-- User Style Level Badge -->
+                    <div class="user-level-badge" id="userLevelBadge">
+                        <span class="level-lbl">Style Rank</span>
+                        <span class="level-val" id="levelName">Fashion Novice</span>
+                    </div>
+                </div>
+                
+                <p class="panel-desc">Complete daily tasks to earn Aesthetic Style Points (ASP) and rank up your profile!</p>
+                
+                <!-- Level progress -->
+                <div class="level-progress-area">
+                    <div class="level-progress-text">
+                        <span id="levelXP">Level 1 • 0 / 100 ASP</span>
+                    </div>
+                    <div class="level-progress-bar">
+                        <div class="level-progress-fill" id="levelProgressFill" style="width: 0%"></div>
+                    </div>
+                </div>
+
+                <!-- Quest Checkbox List -->
+                <div class="quest-checklist" id="questChecklist">
+                    <div class="quest-item" id="quest-tarot">
+                        <i class="fa-regular fa-square quest-box"></i>
+                        <span class="quest-text">Draw your Style Vibe Card of the Day</span>
+                        <span class="quest-reward">+20 ASP</span>
+                    </div>
+                    <div class="quest-item" id="quest-comment">
+                        <i class="fa-regular fa-square quest-box"></i>
+                        <span class="quest-text">Write a nice comment in the Fan Zone</span>
+                        <span class="quest-reward">+30 ASP</span>
+                    </div>
+                    <div class="quest-item" id="quest-battle">
+                        <i class="fa-regular fa-square quest-box"></i>
+                        <span class="quest-text">Vote in 3 Fashion Battles (<span id="questBattleProgress">0/3</span>)</span>
+                        <span class="quest-reward">+40 ASP</span>
+                    </div>
+                    <div class="quest-item" id="quest-fav">
+                        <i class="fa-regular fa-square quest-box"></i>
+                        <span class="quest-text">Bookmark at least one look as your Favorite</span>
+                        <span class="quest-reward">+10 ASP</span>
+                    </div>
+                </div>
+                
+                <div class="quests-footer-btn-row">
+                    <button class="action-btn return-gallery-btn" id="returnGalleryBtn">
+                        <i class="fa-solid fa-arrow-left"></i> Return to Gallery
+                    </button>
+                </div>
+            </div>
+
+            <!-- RIGHT COLUMN: DAILY VIBE TAROT CARD -->
+            <div class="hub-panel glass-card tarot-panel">
+                <div class="panel-header">
+                    <div class="panel-title-group">
+                        <i class="fa-solid fa-moon glow-moon"></i>
+                        <h3>Daily Style Vibe</h3>
+                    </div>
+                </div>
+                
+                <p class="panel-desc">Draw a card once per day to flip open today's custom fashion horoscope.</p>
+                
+                <!-- 3D Card Flip Container -->
+                <div class="tarot-card-container">
+                    <div class="tarot-card-3d" id="tarotCard">
+                        <!-- Back Side (Mystic Cover) -->
+                        <div class="tarot-side tarot-back">
+                            <div class="tarot-back-design">
+                                <div class="mystic-seal">✨</div>
+                                <h4>AESTHETICA</h4>
+                                <p>FLIP TO DRAW</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Front Side (horoscope result) -->
+                        <div class="tarot-side tarot-front">
+                            <div class="tarot-front-header">
+                                <span class="tarot-tag">Daily Vibe</span>
+                                <h4 id="tarotName">The Muse</h4>
+                            </div>
+                            <div class="tarot-quote-box">
+                                <p class="tarot-quote" id="tarotQuote">"Elegance is not standing out, but being remembered."</p>
+                            </div>
+                            <div class="tarot-suggestion">
+                                <span class="suggest-label">Style Tip:</span>
+                                <p id="tarotTip">Accessorize with minimalist gold drapes today.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- SEARCH & INTERACTIVE FILTER HUB -->
+        <section class="filter-hub">
+            <div class="search-bar-wrapper">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                <input type="text" id="searchInput" placeholder="Search celebrity name, style vibe, or keywords..." autocomplete="off">
+                <button class="clear-search-btn" id="clearSearchBtn"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+
+            <!-- Category Filtering Chips -->
+            <div class="filter-chips" id="categoryChips"></div>
+
+            <!-- Vibe Tags Quick Filters -->
+            <div class="vibe-tags-container">
+                <span class="tags-label">Aesthetic:</span>
+                <div class="vibe-tags" id="vibeTags"></div>
+            </div>
+        </section>
+
+        <!-- MAIN GALLERY GRID -->
+        <main class="gallery-section">
+            <div class="gallery-status" id="galleryStatus">Loading portfolios...</div>
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Javascript will inject cards here -->
+            </div>
+            
+            <!-- Empty State -->
+            <div class="empty-state" id="emptyState">
+                <i class="fa-solid fa-face-frown-open empty-icon"></i>
+                <h3>No matching styles found</h3>
+                <p>Try resetting the search or category filters to explore other looks.</p>
+                <button class="reset-filters-btn" id="resetFiltersBtn">Reset Filters</button>
+            </div>
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="main-footer">
+            <p>© 2026 AESTHETICA Hub • Created with ✨ for College Students & Teachers</p>
+        </footer>
+
+    </div>
+
+    <!-- ================= TABS DETAIL MODAL ================= -->
+    <div class="modal-overlay" id="detailModal">
+        <div class="detail-modal-container">
+            <button class="modal-close-btn" id="modalCloseBtn">&times;</button>
+            
+            <div class="detail-layout">
+                <!-- Left: Media/Image -->
+                <div class="detail-media-pane">
+                    <img id="modalImg" src="" alt="Celebrity Look">
+                    <div class="detail-badge-float" id="modalBadge">⚡ Interactive</div>
+                    <button class="modal-heart-btn" id="modalHeartBtn">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                    <!-- Hidden music player tag -->
+                    <audio id="celebAudioPlayer" loop style="display: none;"></audio>
+                </div>
+                
+                <!-- Right: Information & Tabs -->
+                <div class="detail-info-pane">
+                    <div class="detail-info-header">
+                        <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 15px; width: 100%;">
+                            <div>
+                                <h2 class="modal-celebrity-name" id="modalName">Celebrity Name</h2>
+                                <div class="modal-tagline" id="modalTagline">Tagline</div>
+                            </div>
+                            <!-- Dynamic premium indicator/lock tag -->
+                            <div id="modalPremiumBadge"></div>
+                        </div>
+                        <div id="audioVisualizerBar" class="audio-visualizer-bar" style="display: none;">
+                            <div class="eq-bar"></div><div class="eq-bar"></div><div class="eq-bar"></div>
+                            <div class="eq-bar"></div><div class="eq-bar"></div><div class="eq-bar"></div>
+                            <div class="eq-bar"></div><div class="eq-bar"></div><div class="eq-bar"></div>
+                            <div class="eq-bar"></div><div class="eq-bar"></div><div class="eq-bar"></div>
+                            <div class="eq-bar"></div><div class="eq-bar"></div><div class="eq-bar"></div>
+                            <div class="eq-bar"></div><div class="eq-bar"></div><div class="eq-bar"></div>
+                            <div class="eq-bar"></div><div class="eq-bar"></div>
+                            <span class="eq-label"><i class="fa-solid fa-music"></i> Live Audio</span>
+                        </div>
+                    </div>
+
+                    <!-- Tab Buttons -->
+                    <div class="tab-header">
+                        <button class="tab-btn active" data-tab="bio-tab">Info</button>
+                        <button class="tab-btn" data-tab="radar-tab">Radar</button>
+                        <button class="tab-btn" data-tab="comments-tab">Wall</button>
+                        <button class="tab-btn" data-tab="video-tab"><i class="fa-solid fa-circle-play" style="color: #ffd700; margin-right: 4px;"></i> Video</button>
+                        <button class="tab-btn" data-tab="couture-tab"><i class="fa-solid fa-wand-magic-sparkles" style="color: #ffd700; margin-right: 4px;"></i> Room</button>
+                        <button class="tab-btn" data-tab="compare-tab"><i class="fa-solid fa-arrows-left-right" style="color: #ffd700; margin-right: 4px;"></i> HD Compare</button>
+                        <button class="tab-btn" data-tab="wallpaper-tab"><i class="fa-solid fa-image" style="color: #ffd700; margin-right: 4px;"></i> Wallpaper</button>
+                    </div>
+
+                    <!-- Tab Contents -->
+                    <div class="tab-content-area">
+                        
+                        <!-- TAB 1: BIOGRAPHY -->
+                        <div class="tab-pane active" id="bio-tab">
+                            <p class="modal-description" id="modalBio">Biography goes here...</p>
+                            
+                            <div class="stat-mini-grid">
+                                <div class="stat-card">
+                                    <span class="stat-title">Profession</span>
+                                    <span class="stat-value" id="modalProfession">Actress & Model</span>
+                                </div>
+                                <div class="stat-card">
+                                    <span class="stat-title">Signature Vibe</span>
+                                    <span class="stat-value" id="modalVibe">Modern & Bold</span>
+                                </div>
+                                <div class="stat-card">
+                                    <span class="stat-title">Style Palette</span>
+                                    <span class="stat-value" id="modalPalette">Royal & Dark</span>
+                                </div>
+                                <div class="stat-card">
+                                    <span class="stat-title">Likes/Saves</span>
+                                    <span class="stat-value" id="modalLikesCount">0</span>
+                                </div>
+                            </div>
+                            
+                            <div class="modal-actions-row" style="margin-top: 20px; display: flex; gap: 10px;">
+                                <button class="download-card-btn" id="downloadCardBtn" style="padding: 10px 18px; border-radius: 12px; font-weight: 600; font-size: 13px; font-family: 'Outfit', sans-serif;">
+                                    <i class="fa-solid fa-download"></i> Generate Fashion Card
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- TAB 2: STYLE RADAR RADIAL CHART -->
+                        <div class="tab-pane" id="radar-tab">
+                            <div class="chart-container-wrapper">
+                                <canvas id="radarCanvas" width="280" height="280"></canvas>
+                                <div class="radar-legend">
+                                    <p class="radar-desc">Aesthetic distribution map showing style indices</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- TAB 3: FAN WALL COMMENTS -->
+                        <div class="tab-pane" id="comments-tab">
+                            <div class="comments-section">
+                                <div class="comments-list" id="commentsList">
+                                    <!-- Dynamic comments -->
+                                </div>
+                                
+                                <form class="comment-form" id="commentForm">
+                                    <div class="comment-avatar-select">
+                                        <label>Choose Avatar:</label>
+                                        <div class="avatar-options" id="avatarOptions">
+                                            <span class="avatar-opt active">😎</span>
+                                            <span class="avatar-opt">✨</span>
+                                            <span class="avatar-opt">🔥</span>
+                                            <span class="avatar-opt">🎓</span>
+                                            <span class="avatar-opt">💖</span>
+                                        </div>
+                                    </div>
+                                    <div class="comment-inputs">
+                                        <input type="text" id="commentUser" placeholder="Your Name/Nickname" required>
+                                        <div class="comment-input-row">
+                                            <input type="text" id="commentText" placeholder="Write a nice comment about this look..." required>
+                                            <button type="submit" class="comment-submit-btn">
+                                                <i class="fa-solid fa-paper-plane"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <!-- TAB 4: RUNWAY VIDEO (PREMIUM ONLY) -->
+                        <div class="tab-pane" id="video-tab">
+                            <div id="premiumVideoContainer" style="width: 100%; min-height: 290px; border-radius: 16px; overflow: hidden; background: #000; display: flex; align-items: center; justify-content: center; position: relative;">
+                                <!-- Loaded dynamically via JS -->
+                            </div>
+                        </div>
+
+                        <!-- TAB 5: PREMIUM COUTURE ROOM (PREMIUM ONLY) -->
+                        <div class="tab-pane" id="couture-tab">
+                            <div id="premiumCoutureContainer" style="width: 100%; min-height: 290px; border-radius: 16px; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.06); padding: 15px; box-sizing: border-box;">
+                                <!-- Loaded dynamically via JS -->
+                            </div>
+                        </div>
+
+                        <!-- TAB 6: HD vs SD COMPARISON SLIDER (PREMIUM ONLY) -->
+                        <div class="tab-pane" id="compare-tab">
+                            <div id="premiumCompareContainer" style="width: 100%; min-height: 220px;">
+                                <!-- Loaded dynamically via JS -->
+                            </div>
+                        </div>
+
+                        <!-- TAB 7: WALLPAPER DOWNLOAD (PREMIUM ONLY) -->
+                        <div class="tab-pane" id="wallpaper-tab">
+                            <div id="premiumWallpaperContainer" style="width: 100%; min-height: 290px;">
+                                <!-- Loaded dynamically via JS -->
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= VIBE QUIZ MODAL ================= -->
+    <div class="modal-overlay" id="quizModal">
+        <div class="quiz-modal-container glass-card">
+            <button class="modal-close-btn" id="quizCloseBtn">&times;</button>
+            
+            <div class="quiz-header">
+                <h2>✨ Celebrity Style Matcher ✨</h2>
+                <p>Answer a few questions to find out which celebrity's wardrobe fits your vibe!</p>
+            </div>
+
+            <!-- Quiz Steps -->
+            <div class="quiz-body">
+                <!-- Step 1 -->
+                <div class="quiz-step active" data-step="1">
+                    <h3 class="quiz-question">1. Select your dream fashion runway color palette:</h3>
+                    <div class="quiz-options">
+                        <div class="quiz-option" data-value="pranali">
+                            <span class="option-icon">✨</span>
+                            <div class="option-details">
+                                <strong>Ethereal Pastels & Floral</strong>
+                                <span>Soft tones, ivory whites, and gentle sparkles</span>
+                            </div>
+                        </div>
+                        <div class="quiz-option" data-value="sharvari">
+                            <span class="option-icon">🔥</span>
+                            <div class="option-details">
+                                <strong>High-Contrast Bold & Glam</strong>
+                                <span>Bright neons, metallics, and statement blacks</span>
+                            </div>
+                        </div>
+                        <div class="quiz-option" data-value="aneet">
+                            <span class="option-icon">💖</span>
+                            <div class="option-details">
+                                <strong>Classic Royal & Heritage</strong>
+                                <span>Velvets, deep crimsons, and vintage elegance</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="quiz-step" data-step="2">
+                    <h3 class="quiz-question">2. Choose your perfect college event aesthetic:</h3>
+                    <div class="quiz-options">
+                        <div class="quiz-option" data-value="pranali">
+                            <span class="option-icon">🌸</span>
+                            <div class="option-details">
+                                <strong>The Dreamy Cultural Fest</strong>
+                                <span>Graceful traditional dresses and matching ornaments</span>
+                            </div>
+                        </div>
+                        <div class="quiz-option" data-value="sharvari">
+                            <span class="option-icon">⭐</span>
+                            <div class="option-details">
+                                <strong>The Glamorous DJ Night</strong>
+                                <span>Chic contemporary crop-tops, blazers, and high boots</span>
+                            </div>
+                        </div>
+                        <div class="quiz-option" data-value="aneet">
+                            <span class="option-icon">👑</span>
+                            <div class="option-details">
+                                <strong>The Sophisticated Prom / Farewell</strong>
+                                <span>Timeless gowns, sleek silhouettes, and minimalist style</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="quiz-step" data-step="3">
+                    <h3 class="quiz-question">3. What is your go-to style accessory?</h3>
+                    <div class="quiz-options">
+                        <div class="quiz-option" data-value="pranali">
+                            <span class="option-icon">💎</span>
+                            <div class="option-details">
+                                <strong>Elegant Jhumkas / Earrings</strong>
+                                <span>Brings a touch of sparkle to any outfit</span>
+                            </div>
+                        </div>
+                        <div class="quiz-option" data-value="sharvari">
+                            <span class="option-icon">🕶️</span>
+                            <div class="option-details">
+                                <strong>Trendy Designer Sunglasses</strong>
+                                <span>Instantly adds high-fashion confidence</span>
+                            </div>
+                        </div>
+                        <div class="quiz-option" data-value="aneet">
+                            <span class="option-icon">💼</span>
+                            <div class="option-details">
+                                <strong>Sleek Handbag / Vintage Clutch</strong>
+                                <span>Keeps things neat, timeless, and organized</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="quiz-step" data-step="4">
+                    <h3 class="quiz-question">4. Which quote resonates most with your fashion attitude?</h3>
+                    <div class="quiz-options">
+                        <div class="quiz-option" data-value="pranali">
+                            <span class="option-icon">🕊️</span>
+                            <div class="option-details">
+                                <strong>"Elegance is the only beauty that never fades."</strong>
+                            </div>
+                        </div>
+                        <div class="quiz-option" data-value="sharvari">
+                            <span class="option-icon">⚡</span>
+                            <div class="option-details">
+                                <strong>"Why blend in when you were born to stand out?"</strong>
+                            </div>
+                        </div>
+                        <div class="quiz-option" data-value="aneet">
+                            <span class="option-icon">⚜️</span>
+                            <div class="option-details">
+                                <strong>"Style is a way to say who you are without speaking."</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Results Step -->
+                <div class="quiz-step quiz-result-step" id="quizResultStep">
+                    <div class="result-celebrity-card">
+                        <div class="result-ribbon">🏆 Your Vibe Match</div>
+                        <div class="result-img-wrapper">
+                            <img id="resultImg" src="" alt="Matched Celebrity">
+                        </div>
+                        <div class="result-details">
+                            <h3 id="resultName">Celebrity Name</h3>
+                            <p class="result-description" id="resultDesc">You match her because...</p>
+                            <div class="result-stats">
+                                <div class="result-stat">
+                                    <span class="result-stat-lbl">Fashion Vibe</span>
+                                    <span class="result-stat-val" id="resultVibe">High Glamour</span>
+                                </div>
+                                <div class="result-stat">
+                                    <span class="result-stat-lbl">Compatibility</span>
+                                    <span class="result-stat-val" id="resultScore">98% Match</span>
+                                </div>
+                            </div>
+                            <div class="quiz-actions-row">
+                                <button class="download-badge-btn" id="downloadBadgeBtn">
+                                    <i class="fa-solid fa-id-card"></i> Save Vibe Badge
+                                </button>
+                                <button class="quiz-restart-btn" id="quizRestartBtn">Take Quiz Again</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Quiz Navigation -->
+            <div class="quiz-footer" id="quizFooter">
+                <span class="quiz-progress-text" id="quizProgressText">Step 1 of 4</span>
+                <div class="quiz-progress-bar">
+                    <div class="quiz-progress-fill" id="quizProgressFill"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ================= FASHION BATTLE MODAL ================= -->
+    <div class="modal-overlay" id="battleModal">
+        <div class="battle-modal-container glass-card">
+            <button class="modal-close-btn" id="battleCloseBtn">&times;</button>
+            
+            <div class="battle-header">
+                <h2>⚡ The Style Duel ⚡</h2>
+                <p>Which look goes harder? Click your favorite to vote!</p>
+            </div>
+
+            <div class="battle-arena">
+                <!-- Card Left -->
+                <div class="battle-card-box" id="battleCardLeft">
+                    <img class="battle-img" src="" alt="Look A">
+                    <div class="battle-card-overlay">
+                        <h4 class="battle-name">Celebrity A</h4>
+                        <p class="battle-caption">Vibe A</p>
+                    </div>
+                    <div class="battle-vote-percent" id="battlePercentLeft">0%</div>
+                </div>
+
+                <!-- VS Indicator -->
+                <div class="battle-vs-badge">VS</div>
+
+                <!-- Card Right -->
+                <div class="battle-card-box" id="battleCardRight">
+                    <img class="battle-img" src="" alt="Look B">
+                    <div class="battle-card-overlay">
+                        <h4 class="battle-name">Celebrity B</h4>
+                        <p class="battle-caption">Vibe B</p>
+                    </div>
+                    <div class="battle-vote-percent" id="battlePercentRight">0%</div>
+                </div>
+            </div>
+
+            <div class="battle-footer">
+                <button class="next-battle-btn" id="nextBattleBtn" disabled>Vote to continue</button>
+                <div class="battle-stats-summary" id="battleStatsSummary">Total Battles Fought: 0</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hidden canvas for badge downloads -->
+    <canvas id="downloadHelperCanvas" style="display:none;"></canvas>
+
+    <!-- ================= PREMIUM LOGIN MODAL ================= -->
+    <div class="modal-overlay" id="loginModal">
+        <div class="login-modal-container glass-card">
+            <button class="modal-close-btn" id="loginCloseBtn">&times;</button>
+            
+            <div class="login-header">
+                <h2><i class="fa-solid fa-crown" style="color: #ffd700;"></i> Unlock AESTHETICA Premium</h2>
+                <p>Enter your premium credentials to unlock crystal-clear HD lookbooks and looped background styling audio tracks.</p>
+            </div>
+
+            <form class="login-form" id="loginForm">
+                <div class="login-input-group">
+                    <label for="loginUsername">Premium Username</label>
+                    <input type="text" id="loginUsername" placeholder="Username" required autocomplete="off">
+                </div>
+                <div class="login-input-group">
+                    <label for="loginPassword">Premium Password</label>
+                    <input type="password" id="loginPassword" placeholder="Enter premium password" required autocomplete="off">
+                </div>
+                <div class="login-error-msg" id="loginErrorMsg" style="display: none; color: #ff5252; font-size: 13px; margin-top: 10px; font-weight: 600;"></div>
+                <button type="submit" class="login-submit-btn">Unlock Premium Experience</button>
+            </form>
+            
+            <div class="login-guest-footer">
+                <p>Don't have a premium account? Log in as guest to view standard low-resolution portfolios.</p>
+                <button class="login-guest-btn" id="loginGuestBtn" type="button">Continue as Guest</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Script Link -->
+    <script src="app.js"></script>
+</body>
+</html>
