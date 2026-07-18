@@ -776,6 +776,7 @@ function renderGallery() {
         
         card.addEventListener("mousemove", (e) => {
             if (!state.isPremium) return; // Only paid users get 3D hover/tilt effects!
+            if ('ontouchstart' in window || navigator.maxTouchPoints > 0) return; // Disable on mobile to prevent stuck tilts
             
             const rect = card.getBoundingClientRect();
             const x = e.clientX - rect.left;
@@ -799,6 +800,7 @@ function renderGallery() {
         
         card.addEventListener("mouseleave", () => {
             if (!state.isPremium) return;
+            if ('ontouchstart' in window || navigator.maxTouchPoints > 0) return;
             card.style.transform = `rotateX(0deg) rotateY(0deg) translateY(0) scale(1)`;
             if (shine) {
                 shine.style.background = "none";
