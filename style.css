@@ -2932,3 +2932,57 @@ body.premium-active .login-modal-container {
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(255, 215, 0, 0.4);
 }
+
+/* --- Additional Mobile & Laptop Responsiveness Tweaks --- */
+#coutureCanvas {
+    max-width: 100% !important;
+    height: auto !important;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 768px) {
+    .wallpaper-preview-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 8px;
+    }
+    
+    .tab-navigation-wrapper {
+        overflow-x: auto;
+        white-space: nowrap;
+        padding-bottom: 4px;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .tab-navigation-wrapper::-webkit-scrollbar {
+        height: 3px;
+    }
+    
+    .tab-navigation-wrapper::-webkit-scrollbar-thumb {
+        background: rgba(255, 215, 0, 0.25);
+        border-radius: 2px;
+    }
+}
+
+@media (max-width: 480px) {
+    .wallpaper-preview-grid {
+        grid-template-columns: 1fr !important;
+        max-width: 260px;
+        margin: 0 auto;
+    }
+    
+    .detail-modal-container {
+        padding: 15px !important;
+    }
+    
+    .modal-actions-row, .quiz-actions-row {
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .download-card-btn, .download-badge-btn, .action-btn {
+        width: 100% !important;
+        text-align: center;
+        justify-content: center;
+    }
+}
